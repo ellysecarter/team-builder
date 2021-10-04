@@ -1,9 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generatePage = require("../utils/generate-page.js")
+// const generatePage = require("../utils/generate-page.js")
 
-
-const 
 
 const promptManager = () => {
     return inquirer.prompt([
@@ -90,14 +88,6 @@ const promptIntern = () => {
           },
     ])
 };
-
-promptManager()
-    .then(promptMenu)
-    .then(promptEngineer)
-    .then(promptMenu)
-    .then(promptIntern)
-    .then(promptMenu)
-    return "generatePage"
 
 
 // write to html file
