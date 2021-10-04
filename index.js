@@ -1,5 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generatePage = require("../utils/generate-page.js")
+
+
+const 
 
 const promptManager = () => {
     return inquirer.prompt([
@@ -89,6 +93,36 @@ const promptIntern = () => {
 
 promptManager()
     .then(promptMenu)
-    if 
+    .then(promptEngineer)
+    .then(promptMenu)
+    .then(promptIntern)
+    .then(promptMenu)
+    return "generatePage"
 
 
+// write to html file
+    const writeToFile = (fileName, data) => {
+        fs.writeFile(fileName, generatePage(data), function (err) {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("Your webpage has been created! Go to index.html and open in browser to check it out!");
+          }
+        });
+      };
+      
+      // initialize app here
+      const init = () => {
+        inquirer
+        promptManager()
+            .then(promptMenu)
+            .then(promptEngineer)
+            .then(promptMenu)
+            .then(promptIntern)
+            .then(promptMenu)
+                console.log(results)
+            writeToFile("index.html", results);
+      };
+      
+      init();
+      
