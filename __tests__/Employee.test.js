@@ -1,7 +1,5 @@
 const Employee = require('../lib/Employee.js')
 
-
-
 test('creates a new employee', () => {
     const employee = new Employee('Ellyse');
 
@@ -28,3 +26,6 @@ test('creates a new employee', () => {
 // * `getEmail()`
 
 // * `getRole()`
+
+
+
