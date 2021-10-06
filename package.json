@@ -7,13 +7,15 @@
     "lib": "lib"
   },
   "dependencies": {
-    "inquirer": "^8.1.5"
+    "inquirer": "^8.1.5",
+    "nodemon": "^2.0.13"
   },
   "devDependencies": {
     "jest": "^27.2.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
