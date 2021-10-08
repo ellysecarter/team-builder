@@ -1,14 +1,11 @@
 const Employee = require('../lib/Employee.js')
 
 test('creates a new employee', () => {
-    const employee = new Employee('Ellyse');
-
-    const managerEmail = ('test@email.com')
-    const managerEmail = (email)
+    const employee = new Employee('Ellyse', 1, 'test@email.com');
   
-    expect(employee.managerName).toBe('Ellyse');
-    expect(employee.managerId).toEqual(expect.any(Number));
-    expect(employee.managerEmail).toBe(expect.any(email))
+    expect(employee.name).toBe('Ellyse');
+    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.email).toEqual(expect.any(String))
   });
 
 

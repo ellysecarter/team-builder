@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const generatePage = require("../utils/generate-page.js")
+const generatePage = require("../utils/generate-page.js")
 
 
 const promptManager = () => {
