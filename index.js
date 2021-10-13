@@ -1,6 +1,10 @@
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const generatePage = require("./utils/generate-page.js");
+const generatePage = require("./utils/generate-page.js");
+const teamMembers = []
 
 const promptManager = () => {
   inquirer
@@ -27,6 +31,8 @@ const promptManager = () => {
       },
     ])
     .then((answers) => {
+      const manager = new Manager (answers.managerName, answers.managerId, answers.managerEmail, answers.officeNumber)
+      teamMembers.push(manager)
       console.log(answers);
       promptMenu();
     });
@@ -84,6 +90,8 @@ const promptEngineer = () => {
       },
     ])
     .then((answers) => {
+      const engineer = new Engineer (answers.engineerName, answers.engineerID, answers.engineerEmail, answers.engineerGitHub)
+      teamMembers.push(engineer)
       console.log(answers);
       promptMenu();
     });
@@ -114,14 +122,16 @@ const promptIntern = () => {
       },
     ])
     .then((answers) => {
+      const intern = new Intern (answers.internName, answers.internID, answers.internEmail, answers.school)
+      teamMembers.push(intern)
       console.log(answers);
       promptMenu();
     });
 };
 
 // write to html file
-const writeToFile = (fileName, data) => {
-  fs.writeFile(fileName, generatePage(data), function (err) {
+const writeToFile = () => {
+  fs.writeFile("team", generatePage(teamMembers), function (err) {
     if (err) {
       console.log(err);
     } else {
@@ -135,6 +145,8 @@ const writeToFile = (fileName, data) => {
 // initialize app here
 const init = () => {
   promptManager();
+  promptEngineer();
+  promptIntern();
 };
 
 init();
