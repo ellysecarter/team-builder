@@ -58,8 +58,8 @@ const promptMenu = () => {
       } else if (answers.menu === "Add an intern.") {
         promptIntern();
       } else {
-        // var results = ""
-        // writeToFile("index.html", results)
+        var results = ""
+        writeToFile("index.html", results)
       }
     });
 };
@@ -131,7 +131,7 @@ const promptIntern = () => {
 
 // write to html file
 const writeToFile = () => {
-  fs.writeFile("team", generatePage(teamMembers), function (err) {
+  fs.writeFile("index.html", generatePage(teamMembers), function (err) {
     if (err) {
       console.log(err);
     } else {
