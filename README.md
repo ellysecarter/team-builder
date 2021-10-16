@@ -37,9 +37,10 @@ Go to https://github.com/ellysecarter/team-builder and clone the SSH key. Next, 
 
 ## Usage 
 
-In your terminal in VS code type in the following command: "node index.js" and follow prompt. Answer all the questions regarding your Team Manager, Engineer, and Intern. Once all information has been entered, head over to "team.html" in the 'dist' directory and open it in your browser.
+In your terminal in VS code type in the following command: "node index.js" and follow prompt. Answer all the questions regarding your Team Manager, Engineer, and Intern. Once all information has been entered, head over to "index.html" in root folder and open it in your browser.
 
-Demo video: 
+Demo video: https://watch.screencastify.com/v/eBD64vDAiLicJNTugYo8 
+
 
 
 ## Tests 
@@ -48,7 +49,7 @@ This project includes 4 test: Employee, Engineer, Intern and Manager
 Once all required packages are installed, tests can be run using the following command: npm test
 
 ## Known Bugs
-* ID for Manager shows as undefined.
+* ID for Manager shows as undefined. 
 
 ## Contact 
 
