@@ -18,7 +18,7 @@
 
 ## Description 
 
-Team Builder uses your terminal to dynamically keep track of your team members .
+Team Builder uses your terminal to dynamically keep track of your team members. Just answer the prompts with the appropriate details and we'll take care of the rest.
 
 ## Technologies Used
 * HTML
@@ -48,7 +48,7 @@ This project includes 4 test: Employee, Engineer, Intern and Manager
 Once all required packages are installed, tests can be run using the following command: npm test
 
 ## Known Bugs
-* 
+* ID for Manager shows as undefined.
 
 ## Contact 
 

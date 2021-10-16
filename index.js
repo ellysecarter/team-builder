@@ -6,7 +6,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
 
-const generatePage = require("./utils/lib.js");
+const generatePage = require("./utils/team.js");
 const writeFile = require('./utils/generate-page.js');
 
 const teamMembers = []
@@ -64,7 +64,7 @@ const promptMenu = () => {
         promptIntern();
       } else {
         var results = ""
-        writeFile("index.html", results)
+        writeToFile("index.html", results)
       }
     });
 };
