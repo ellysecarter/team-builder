@@ -4,7 +4,6 @@
 
 
 ![screenshot](assets/images/screenshot2.png)
-  
 
 ## Table of Contents 
 
