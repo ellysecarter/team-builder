@@ -24,8 +24,8 @@ Team Builder uses your terminal to dynamically keep track of your team members .
 * HTML
 * CSS
 * JavaScript
-* Node
-* Jest
+* Node Package Manager
+* NPM packages used: fs, inquirer, jest
 
 ## Installation 
 
@@ -37,7 +37,7 @@ Go to https://github.com/ellysecarter/team-builder and clone the SSH key. Next, 
 
 ## Usage 
 
-Enter app command "node index.js" and follow prompt. once all team information has been entered, a file called "team.html" will be created in the 'dist' directory.
+In your terminal in VS code type in the following command: "node index.js" and follow prompt. Answer all the questions regarding your Team Manager, Engineer, and Intern. Once all information has been entered, head over to "team.html" in the 'dist' directory and open it in your browser.
 
 Demo video: 
 

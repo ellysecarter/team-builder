@@ -1,9 +1,14 @@
+const inquirer = require("inquirer");
+const fs = require("fs");
+
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const inquirer = require("inquirer");
-const fs = require("fs");
-const generatePage = require("./utils/generate-page.js");
+
+
+const generatePage = require("./utils/lib.js");
+const writeFile = require('./utils/generate-page.js');
+
 const teamMembers = []
 
 const promptManager = () => {
@@ -59,7 +64,7 @@ const promptMenu = () => {
         promptIntern();
       } else {
         var results = ""
-        writeToFile("index.html", results)
+        writeFile("index.html", results)
       }
     });
 };
@@ -145,8 +150,7 @@ const writeToFile = () => {
 // initialize app here
 const init = () => {
   promptManager();
-  promptEngineer();
-  promptIntern();
+  
 };
 
 init();
