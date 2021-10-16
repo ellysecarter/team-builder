@@ -3,7 +3,7 @@
 ## A way to keep track of your team!
 
 
-![screenshot](assets/images/screenshot2.png)
+![screenshot](Assets/images/screenshot2.png)
 
 ## Table of Contents 
 
